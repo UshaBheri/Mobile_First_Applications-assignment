@@ -1,0 +1,181 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Utility classes */
+  .text-center {
+    text-align: center;
+  }
+  
+  .mb-20 {
+    margin-bottom: 20px;
+  }
+  
+  .mt-20 {
+    margin-top: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  input:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  
+  .error {
+    color: red;
+    margin-top: 10px;
+  }
+  
+  /* Navbar styles */
+  .navbar {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 0 10px;
+  }
+  
+  .navbar a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Home Page styles */
+  .home {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  /* Signin/Signup Page styles */
+  .auth-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 50px auto;
+  }
+  
+  /* Star Wars Characters Page styles */
+  .characters {
+    padding: 20px;
+  }
+  
+  .characters ul {
+    list-style-type: none;
+  }
+  
+  .characters li {
+    background-color: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .pagination button {
+    margin: 0 5px;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .container {
+      width: 95%;
+    }
+  
+    .auth-container {
+      margin: 20px auto;
+    }
+  
+    .home {
+      padding: 20px;
+    }
+  
+    form {
+      gap: 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .navbar {
+      flex-direction: column;
+    }
+  
+    .navbar a {
+      padding: 10px 0;
+    }
+  
+    .auth-container {
+      padding: 20px;
+    }
+  
+    .characters li {
+      padding: 10px;
+    }
+  
+    button {
+      width: 100%;
+    }
+  
+    .pagination button {
+      margin: 5px 0;
+    }
+  }
+  
